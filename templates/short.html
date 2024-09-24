@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+
+{% set active_page = "short" %}
+
+{% block title %}Short{% endblock %}
+
+{% block content %}
+    <!--page content-->
+	<div class="center">
+		<br>
+		<br>
+		<h1>This page will generate a short password for you! Please fill out the form below and then press generate.</h1>
+		<br>
+		<form action="/short.py">
+		  <div class="mb-3 mt-3">
+			<label for="animal" class="form-label">What is your favorite animal?</label>
+			<input type="animal" class="form-control" id="animal" placeholder="Enter favorite animal" name="animal">
+		  </div>
+		  <div class="mb-3">
+			<label for="word" class="form-label">What is your favorite word?</label>
+			<input type="word" class="form-control" id="word" placeholder="Enter favorite word" name="word">
+		  </div>
+		  <button type="submit" class="btn btn-primary">Submit</button>
+		</form>
+	</div>
+{% endblock %}

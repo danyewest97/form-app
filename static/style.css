@@ -1,3 +1,17 @@
-#content {
-     margin-left: 20px;
+.center {
+	text-align: center;
+	margin: auto;
+}
+
+p {
+	font-size: 20px;
+}
+
+h1 {
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+form > input {
+	
 }
