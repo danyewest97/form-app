@@ -6,10 +6,14 @@
 
 {% block content %}
     <!--page content-->
+	<script class="short-submit" src="{{ url_for('static', filename='short.js') }}" data-animal="{{animal}}" data-word="{{word}}"></script>
+	
 	<div class="center">
 		<br>
 		<br>
 		<h1>Request received successfully! Your favorite animal is {{animal}} and your favorite word is {{word}}</h1>
 		<br>
 	</div>
+	
+	
 {% endblock %}
