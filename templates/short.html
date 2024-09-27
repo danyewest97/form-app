@@ -11,7 +11,7 @@
 		<br>
 		<h1>This page will generate a short password for you! Please fill out the form below and then press generate.</h1>
 		<br>
-		<form action="{{ url_for('render_short_submit') }}" method="POST">
+		<form action="/short-submit" method="GET">
 		  <div class="mb-3 mt-3">
 			<label for="animal" class="form-label">What is your favorite animal?</label>
 			<input type="animal" class="form-control" id="animal" placeholder="Enter favorite animal" name="animal">

@@ -6,12 +6,11 @@
 
 {% block content %}
     <!--page content-->
-	<script class="short-submit" src="{{ url_for('static', filename='short.js') }}" data-animal="{{animal}}" data-word="{{word}}"></script>
 	
 	<div class="center">
 		<br>
 		<br>
-		<h1>Here is your password: </h1>
+		<h1>Here is your password: {{password}}</h1>
 		<br>
 		<h1 class="result"></h1>
 	</div>
