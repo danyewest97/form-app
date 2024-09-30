@@ -10,6 +10,33 @@
 		<br>
 		<br>
 		<h1>This page will generate a long password for you! Please fill out the form below and then press generate.</h1>
+		<p>(Most fields are optional, but for the password to work on most sites you will need at least one uppercase and one lowercase character)</p>
 		<br>
+		<form action="/long-submit" method="GET">
+		  <div class="mb-3 mt-3">
+			<label for="animal" class="form-label">What is your favorite animal?</label>
+			<input type="animal" class="form-control" id="animal" placeholder="Enter favorite animal" name="animal">
+		  </div>
+		  <div class="mb-3">
+			<label for="word" class="form-label">What is your favorite word?</label>
+			<input type="word" class="form-control" id="word" placeholder="Enter favorite word" name="word">
+		  </div>
+		  <div class="mb-3">
+			<label for="media" class="form-label">What is your favorite book, movie, TV show, etc.?</label>
+			<input type="media" class="form-control" id="media" placeholder="Enter favorite media" name="media">
+		  </div>
+		  <div class="mb-3">
+			<label for="colorName" class="form-label">What is your favorite color?</label>
+			<input type="colorName" class="form-control" id="colorName" placeholder="Enter favorite color" name="colorName">
+		  </div>
+		  
+		  <!-- Automatically creates a color picker, for some reason. Pretty cool -->
+		  <!-- <div class="mb-3"> -->
+			<!-- <label for="color" class="form-label">What is your favorite color?</label> -->
+			<!-- <input type="color" class="form-control" id="color" placeholder="Enter favorite color" name="color"> -->
+		  <!-- </div> -->
+		  
+		  <button type="submit" class="btn btn-primary">Generate</button>
+		</form>
 	</div>
 {% endblock %}
