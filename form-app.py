@@ -25,8 +25,8 @@ def shortPass(animal, word):
     randomNum = int(random.random() * 100)
     
     # Getting rid of spaces in the user's answers
-    animal.replace(" ", "")
-    word.replace(" ", "")
+    animal = animal.replace(" ", "")
+    word = word.replace(" ", "")
     
     # Adding all the different parts of the password to the resultArray
     resultArray.append(specialCharacter)
@@ -67,10 +67,10 @@ def longPass(animal, word, media, color):
     randomNum = int(random.random() * 100)
     
     # Getting rid of spaces in the user's answers
-    animal.replace(" ", "")
-    word.replace(" ", "")
-    media.replace(" ", "")
-    color.replace(" ", "")
+    animal = animal.replace(" ", "")
+    word = word.replace(" ", "")
+    media = media.replace(" ", "")
+    color = color.replace(" ", "")
     
     # Adding all the different parts of the password to the resultArray
     resultArray.append(specialCharacter)
